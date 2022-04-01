@@ -1,0 +1,18 @@
+name: git-function-mixed
+namespace: default
+runtime: nodejs14
+source:
+    sourceType: git
+    url: https://github.com/kwiatekus/kyma-function-mixed.git
+    repository: kyma-functions-orchestration-repo
+    reference: main
+    baseDir: /src/hello-world-function/
+apiRules:
+    - name: git-function-mixed
+      service:
+        host: hello
+      rules:
+        - methods:
+            - GET
+          accessStrategies:
+            - handler: allow
