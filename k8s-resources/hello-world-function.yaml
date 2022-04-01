@@ -16,7 +16,7 @@ metadata:
   namespace: default
 spec:
   baseDir: /src/hello-world-function/
-  reference: master
+  reference: main
   runtime: nodejs14
   source: kyma-functions-orchestration-repo
   type: git
