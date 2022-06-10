@@ -1,5 +1,5 @@
 module.exports = {
     main: function (event, context) {
-        return 'Witaj Swiecie!!'
+        return 'Hello World\n\r'
     }
 }
